@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FriendFinder</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/foundation-icons.css" />
+    <script src="https://code.jquery.com/jquery.js"></script>
+</head>
+
+<body>
+    <div class="row">
+        <div class="large-12 columns">
+            <h2>Survey Questions</h2>
+            <hr>
+            <div class="callout large secondary">
+                <h3><strong>About You</strong></h3>
+                <form data-abide novalidate>
+                    <div data-abide-error class="alert callout" style="display: none;">
+                        <p><i class="fi-alert"></i> There are some errors in your form.</p>
+                    </div>
+                    <!-- ENTER NAME -->
+                    <label>
+                        <h5>Name (Required)</h5>
+                        <input type="text" placeholder="Jimmy John" id="name" aria-describedby="exampleHelpText" required>
+                        <span class="form-error">Fill this out, it's required.
+                        </span>
+                    </label>
+                    <!-- ENTER photoURL -->
+                    <label>
+                        <h5>Link to photo image (Required)</h5>
+                        <input type="text" placeholder="Photo URL" id="photo-url" aria-describedby="exampleHelpText" required>
+                        <span class="form-error">Fill this out, it's required.
+                        </span>
+                    </label>
+                    <hr>
+                    <!-- QUESTION 1 -->
+                    <fieldset>
+                        <h4><strong>Question 1</strong></h4>
+                        <h5>I like jif over gif.</h5>
+                        <input type="radio" name="q1" value="1" id="q1answer1">
+                        <label for="q1answer1">1 (Strongly Disagree)</label>
+                        <input type="radio" name="q1" value="2" id="q1answer2" required>
+                        <label for="q1answer2">2</label>
+                        <input type="radio" name="q1" value="3" id="q1answer3">
+                        <label for="q1answer3">3</label>
+                        <input type="radio" name="q1" value="4" id="q1answer4">
+                        <label for="q1answer4">4</label>
+                        <input type="radio" name="q1" value="5" id="q1answer5">
+                        <label for="q1answer5">5 (Strongly Agree)</label>
+                        <!-- QUESTION 2 -->
+                        <h4><strong>Question 2</strong></h4>
+                        <h5>I prefer a burger over a burrito.</h5>
+                        <input type="radio" name="q2" value="1" id="q2answer1">
+                        <label for="q2answer1">1 (Strongly Disagree)</label>
+                        <input type="radio" name="q2" value="2" id="q2answer2" required>
+                        <label for="q2answer2">2</label>
+                        <input type="radio" name="q2" value="3" id="q2answer3">
+                        <label for="q2answer3">3</label>
+                        <input type="radio" name="q2" value="4" id="q2answer4">
+                        <label for="q2answer4">4</label>
+                        <input type="radio" name="q2" value="5" id="q2answer5">
+                        <label for="q2answer5">5 (Strongly Agree)</label>
+                        <!-- QUESTION 3 -->
+                        <h4><strong>Question 3</strong></h4>
+                        <h5>Obviously that dress is Black and Blue!!</h5>
+                        <input type="radio" name="q3" value="1" id="q3answer1">
+                        <label for="q3answer1">1 (Strongly Disagree)</label>
+                        <input type="radio" name="q3" value="2" id="q3answer2" required>
+                        <label for="q3answer2">2</label>
+                        <input type="radio" name="q3" value="3" id="q3answer3">
+                        <label for="q3answer3">3</label>
+                        <input type="radio" name="q3" value="4" id="q3answer4">
+                        <label for="q3answer4">4</label>
+                        <input type="radio" name="q3" value="5" id="q3answer5">
+                        <label for="q3answer5">5 (Strongly Agree)</label>
+                        <!-- QUESTION 4 -->
+                        <h4><strong>Question 4</strong></h4>
+                        <h5>Bootstrap FTW!!</h5>
+                        <input type="radio" name="q4" value="1" id="q4answer1">
+                        <label for="q4answer1">1 (Strongly Disagree)</label>
+                        <input type="radio" name="q4" value="2" id="q4answer2" required>
+                        <label for="q4answer2">2</label>
+                        <input type="radio" name="q4" value="3" id="q4answer3">
+                        <label for="q4answer3">3</label>
+                        <input type="radio" name="q4" value="4" id="q4answer4">
+                        <label for="q4answer4">4</label>
+                        <input type="radio" name="q4" value="5" id="q4answer5">
+                        <label for="q4answer5">5 (Strongly Agree)</label>
+                        <!-- QUESTION 5 -->
+                        <h4><strong>Question 5</strong></h4>
+                        <h5>Waffles tastes better than pancakes.</h5>
+                        <input type="radio" name="q5" value="1" id="q5answer1">
+                        <label for="q5answer1">1 (Strongly Disagree)</label>
+                        <input type="radio" name="q5" value="2" id="q5answer2" required>
+                        <label for="q5answer2">2</label>
+                        <input type="radio" name="q5" value="3" id="q5answer3">
+                        <label for="q5answer3">3</label>
+                        <input type="radio" name="q5" value="4" id="q5answer4">
+                        <label for="q5answer4">4</label>
+                        <input type="radio" name="q5" value="5" id="q5answer5">
+                        <label for="q5answer5">5 (Strongly Agree)</label>
+                        <!-- QUESTION 6 -->
+                        <h4><strong>Question 6</strong></h4>
+                        <h5>Dogs likes me more than cats.</h5>
+                        <input type="radio" name="q6" value="1" id="q6answer1">
+                        <label for="q6answer1">1 (Strongly Disagree)</label>
+                        <input type="radio" name="q6" value="2" id="q6answer2" required>
+                        <label for="q6answer2">2</label>
+                        <input type="radio" name="q6" value="3" id="q6answer3">
+                        <label for="q6answer3">3</label>
+                        <input type="radio" name="q6" value="4" id="q6answer4">
+                        <label for="q6answer4">4</label>
+                        <input type="radio" name="q6" value="5" id="q6answer5">
+                        <label for="q6answer5">5 (Strongly Agree)</label>
+                        <!-- QUESTION 7 -->
+                        <h4><strong>Question 7</strong></h4>
+                        <h5>I have a spirit animal and it guides me.</h5>
+                        <input type="radio" name="q7" value="1" id="q7answer1">
+                        <label for="q7answer1">1 (Strongly Disagree)</label>
+                        <input type="radio" name="q7" value="2" id="q7answer2" required>
+                        <label for="q7answer2">2</label>
+                        <input type="radio" name="q7" value="3" id="q7answer3">
+                        <label for="q7answer3">3</label>
+                        <input type="radio" name="q7" value="4" id="q7answer4">
+                        <label for="q7answer4">4</label>
+                        <input type="radio" name="q7" value="5" id="q7answer5">
+                        <label for="q7answer5">5 (Strongly Agree)</label>
+                        <h4><strong>Question 8</strong></h4>
+                        <h5>LemonChiffon is a triggers me.</h5>
+                        <input type="radio" name="q8" value="1" id="q8answer1">
+                        <label for="q8answer1">1 (Strongly Disagree)</label>
+                        <input type="radio" name="q8" value="2" id="q8answer2" required>
+                        <label for="q8answer2">2</label>
+                        <input type="radio" name="q8" value="3" id="q8answer3">
+                        <label for="q8answer3">3</label>
+                        <input type="radio" name="q8" value="4" id="q8answer4">
+                        <label for="q8answer4">4</label>
+                        <input type="radio" name="q8" value="5" id="q8answer5">
+                        <label for="q8answer5">5 (Strongly Agree)</label>
+                        <h4><strong>Question 9</strong></h4>
+                        <h5>Macs are overated.</h5>
+                        <input type="radio" name="q9" value="1" id="q9answer1">
+                        <label for="q9answer1">1 (Strongly Disagree)</label>
+                        <input type="radio" name="q9" value="2" id="q9answer2" required>
+                        <label for="q9answer2">2</label>
+                        <input type="radio" name="q9" value="3" id="q9answer3">
+                        <label for="q9answer3">3</label>
+                        <input type="radio" name="q9" value="4" id="q9answer4">
+                        <label for="q9answer4">4</label>
+                        <input type="radio" name="q9" value="5" id="q9answer5">
+                        <label for="q9answer5">5 (Strongly Agree)</label>
+                        <h4><strong>Question 10</strong></h4>
+                        <h5>Its VAR-CHHHEEEE-ARE not VAR-CAR.</h5>
+                        <input type="radio" name="q10" value="1" id="q10answer1">
+                        <label for="q10answer1">1 (Strongly Disagree)</label>
+                        <input type="radio" name="q10" value="2" id="q10answer2" required>
+                        <label for="q10answer2">2</label>
+                        <input type="radio" name="q10" value="3" id="q10answer3">
+                        <label for="q10answer3">3</label>
+                        <input type="radio" name="q10" value="4" id="q10answer4">
+                        <label for="q10answer4">4</label>
+                        <input type="radio" name="q10" value="5" id="q10answer5">
+                        <label for="q10answer5">5 (Strongly Agree)</label>
+                        <br>
+                        <!-- Modal Toggle SUBMIT BUTTON -->
+                        <button type="submit" class="button tiny primary submit-btn" id="trigger-reveal">
+                            <h5><i class="fi-checkbox">  Submit</i></h5></button>
+                    </fieldset>
+                </form>
+            </div>
+            <!-- Modal trigger -->
+            <div class="reveal text-center" id="modal" data-reveal data-animation-in="spin-in" data-animation-out="fade-out">
+                <h3>Friend revealed!</h3>
+                <h5><strong id="matchName"></strong></h5>
+                <img id="matchImg" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt="">
+            </div>
+            <!-- FOOTER -->
+            <footer class="footer">
+                <div class="container">
+                    <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/afhaque/friendfinder">GitHub Repo</a></p>
+                </div>
+            </footer>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/app.js"></script>
+    <script type="text/javascript">
+    $('#trigger-reveal').on('click', function(event){
+        event.preventDefault();
+
+        var newFriend = {
+            name: $("#name").val().trim(),
+            photoURL: $("#photo-url").val(),
+            scores: [$("input[name='q1']:checked").val(),
+                $("input[name='q2']:checked").val(),
+                $("input[name='q3']:checked").val(),
+                $("input[name='q4']:checked").val(),
+                $("input[name='q5']:checked").val(),
+                $("input[name='q6']:checked").val(),
+                $("input[name='q7']:checked").val(),
+                $("input[name='q8']:checked").val(),
+                $("input[name='q9']:checked").val(),
+                $("input[name='q10']:checked").val(),
+            ]
+        }
+        console.log(newFriend);
+        //gets URL of website
+        var currentURL = window.location.origin;
+        // AJAX post the data to the friends API.
+        $.post("/api/friends", newFriend).done(function(data) {
+            //data returns matchedFriend, calculated from post/api/friends
+            console.log("data is: "+data)
+            $("#matchName").html(data.name);
+            $("#matchImg").attr("src", data.photoURL);
+            $("#modal").foundation('open');
+        });
+
+
+    });
+    </script>
+</body>
+
+</html>
