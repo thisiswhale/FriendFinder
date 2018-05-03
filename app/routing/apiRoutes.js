@@ -10,7 +10,7 @@ module.exports = function(app) {
     });
 
     app.post("/api/friends", function(req, res) {
-
+      console.log("post request api/friends/");
         var newFriend = req.body;
         console.log(newFriend);
         var newFriendScore = 0;
@@ -36,7 +36,7 @@ module.exports = function(app) {
             console.log(newFriendScore, friendListScore);
 
             difference = Math.abs(newFriendScore - friendListScore);
-            console.log(difference);
+            // console.log(difference);
             //need the lowest difference to return a friend object
             if (compatibility > difference) {
                 compatibility = difference;
